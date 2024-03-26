@@ -1,0 +1,36 @@
+Tica Ion Valentin - 322Cb
+Tema 1 - PA
+
+   Mie unu tema mi s-a parut destul de complicata pentru mine, fiindu-mi greu
+sa realizez singur complet algortimii si principiile, astfel am fost nevoit
+sa ma documentez destul de mult si sa-mi rog colegii sa-mi explice.
+
+1.   La problema cu feribotul am citit din fisier si am calculat suma tuturor elementelor,
+si elementul maxim din vectorul de greutati.
+    Stiind ca indiferent de numarul feriboturilor(fie mai mare sau mai mic ca masinile)
+pe unul din vase va fi si elementul maxim, astfel cautarea incepe de la el in sus pana
+la suma tuturor elementelor pe un feribot. Prin cautare binara vad daca un numar
+poate fi ca maxim pe cele k vapoare.
+    Astfel Stiind un maxim calculez daca pot grupa toate masinile incat sa nu
+depaseasca acel maxim, in caz afirmativ compar cu minimul.
+
+
+2.    La problema cu vectorii am abordat cele doua taskuri in urmatorul fel:
+
+    La numarul nelimitat de mutari aflu care dintre vectori are mai multe elemente
+mai mari ca celalt, fiind sortate crescator. Apoi parcurg pe cel mai mare crescator si
+pe celalt descrescator in pararel si adaug pe cel mai mare la scor.
+
+    La numarul limitat de mutari, parcurg cele 2 vectori si creez alti 2 unul cu elemente
+ce intra deja la scor, fiind mai mari, si unul cu restul elementelor. Le sortez,
+apoi parcurg acesti 2 vectori si cat timp avem mutari si un element din rest e mai mare
+decat cel din vectorul de suma il schimb si adaug la scor, in rest adaug normal
+la suma.
+
+
+3.    La problema cu sushi e ca cea cu Rucsac-ul din laborator, algortimul fiind
+preluat si prelucrat algoritmul. Folosim programarea dinamică pentru a calcula suma maximă a notelor.
+Fiecare celulă dp[i][j] reprezintă suma maximă a notelor pe care le puteți obține, luând în considerare
+primele i tipuri de sushi și având la dispoziție un buget de j.
+    La fiecare pas, avem două opțiuni: să nu luăm în considerare tipul curent de sushi sau să-l luăm și
+să actualizăm suma maximă a notelor, dacă acest lucru ne aduce un beneficiu mai mare. 
