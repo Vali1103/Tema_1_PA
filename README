@@ -1,14 +1,37 @@
 Tica Ion Valentin - 322Cb
 Tema 1 - PA
 
-Această temă mi-a reprezentat o provocare interesantă, necesitând o documentare amplă și asistență din partea colegilor pentru a înțelege în profunzime algoritmii și principiile implicate. În cele ce urmează, voi descrie abordările mele pentru fiecare problemă în parte.
+Această temă mi-a reprezentat o provocare interesantă, necesitând o documentare amplă
+și asistență din partea colegilor pentru a înțelege în profunzime algoritmii și principiile
+implicate. În cele ce urmează, voi descrie abordările mele pentru fiecare problemă în parte.
 
-Problema Feribotului: Am început prin a citi din fișier și a calcula suma totală a elementelor, precum și elementul maxim din vectorul de greutăți. Având în vedere că, indiferent de numărul de feriboturi - fie acesta mai mare sau mai mic decât numărul de mașini - un feribot va trebui să transporte elementul de greutate maximă, am dedus că optimizarea căutării trebuie să înceapă de la greutatea maximă în sus, până la suma totală suportată de un feribot. Prin aplicarea căutării binare, am determinat dacă un anumit maxim este fezabil pentru cele k vapoare. Odată identificat un maxim fezabil, am verificat posibilitatea de a grupa toate mașinile astfel încât să nu depășească acest maxim, ajustând soluția optimă conform necesităților.
+Problema Feribotului: Am început prin a citi din fișier și a calcula suma totală
+a elementelor, precum și elementul maxim din vectorul de greutăți. Având în vedere că,
+indiferent de numărul de feriboturi - fie acesta mai mare sau mai mic decât numărul de mașini
+- un feribot va trebui să transporte elementul de greutate maximă, am dedus că optimizarea
+căutării trebuie să înceapă de la greutatea maximă în sus, până la suma totală suportată
+de un feribot. Prin aplicarea căutării binare, am determinat dacă un anumit maxim este
+fezabil pentru cele k vapoare. Odată identificat un maxim fezabil, am verificat
+posibilitatea de a grupa toate mașinile astfel încât să nu depășească acest maxim,
+ajustând soluția optimă conform necesităților.
 
 Problema Vectorilor implică două sub-probleme distincte:
 
-Număr nelimitat de mutări: Am comparat vectorii pentru a identifica care dintre ei conține mai multe elemente superioare celuiălalt, ambele fiind sortate crescător. Apoi, am parcurs vectorul cu elemente superioare în ordine crescătoare și celălalt în ordine descrescătoare, adăugând la scor elementele superioare.
-Număr limitat de mutări: Am parcurs ambii vectori pentru a separa elementele direct contributoare la scor de celelalte. După sortarea acestor subvectori, am utilizat mutările disponibile pentru a înlocui, când posibil, elementele din vectorul secundar cu cele mai valoroase din cel primar, maximizând astfel scorul final.
-Problema cu Sushi se aseamănă cu problema Rucsacului discutată în laborator, aplicându-se programarea dinamică pentru a maximiza suma notelor. Fiecare celulă din matricea de programare dinamică, dp[i][j], reprezintă suma maximă a notelor ce poate fi obținută considerând primele i tipuri de sushi și un buget de j. Strategia include evaluarea beneficiului adus de includerea sau excluderea fiecărui tip de sushi în calculul sumei maxime posibile.
+Număr nelimitat de mutări: Am comparat vectorii pentru a identifica care dintre ei conține
+mai multe elemente superioare celuiălalt, ambele fiind sortate crescător. Apoi, am parcurs
+vectorul cu elemente superioare în ordine crescătoare și celălalt în ordine descrescătoare,
+adăugând la scor elementele superioare.
+Număr limitat de mutări: Am parcurs ambii vectori pentru a separa elementele direct
+contributoare la scor de celelalte. După sortarea acestor subvectori, am utilizat
+mutările disponibile pentru a înlocui, când posibil, elementele din vectorul secundar
+cu cele mai valoroase din cel primar, maximizând astfel scorul final.
+Problema cu Sushi se aseamănă cu problema Rucsacului discutată în laborator, aplicându-se
+programarea dinamică pentru a maximiza suma notelor. Fiecare celulă din matricea
+de programare dinamică, dp[i][j], reprezintă suma maximă a notelor ce poate fi obținută
+considerând primele i tipuri de sushi și un buget de j. Strategia include evaluarea
+beneficiului adus de includerea sau excluderea fiecărui tip de sushi în calculul sumei
+maxime posibile.
 
-În concluzie, această temă a fost o oportunitate excelentă de a aprofunda concepte complexe de algoritmica, necesitând o combinație de gândire analitică, strategii de optimizare și implementări eficiente.
+În concluzie, această temă a fost o oportunitate excelentă de a aprofunda concepte
+complexe de algoritmica, necesitând o combinație de gândire analitică, strategii
+de optimizare și implementări eficiente.
